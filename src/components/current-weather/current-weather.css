@@ -1,65 +1,86 @@
 .weather {
-    width: 300px;
-    border-radius: 6px;
-    box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
-    color: #fff;
-    background-color: #333;
-    margin: 20px auto 0 auto;
-    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    transition: transform 0.3s ease;
 }
 
-.top, 
-.bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;  
+.weather:hover {
+    transform: translateY(-5px);
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .city {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1;
-    margin: 0;
-    letter-spacing: 1px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
 }
 
 .weather-description {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1;
-    margin: 0;
+    font-size: 1.1em;
+    color: #666;
+    margin: 5px 0;
+}
+
+.save-city-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.save-city-button:hover {
+    background-color: #0056b3;
 }
 
 .weather-icon {
-    width: 100px;
+    width: 80px;
+    height: 80px;
+}
+
+.bottom {
+    width: 100%;
 }
 
 .temperature {
-    font-weight: 600;
-    font-size: 70px;
-    width: auto;
-    letter-spacing: -5px;
-    margin: 10px 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
 }
 
 .details {
     width: 100%;
-    padding-left: 20px;
 }
 
 .parameter-row {
     display: flex;
     justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
 }
 
 .parameter-label {
-    text-align: left;
-    font-weight: 400;
-    font-size: 12px;
+    font-weight: bold;
+    color: #555;
 }
 
 .parameter-value {
-    text-align: right;
-    font-weight: 600;
-    font-size: 12px;
+    color: #333;
 }

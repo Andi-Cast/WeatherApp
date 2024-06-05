@@ -1,12 +1,13 @@
 import "./current-weather.css"
 
-const CurrentWeather = ({data}) => {
+const CurrentWeather = ({data, onSaveCity}) => {
     return (
         <div className="weather">
             <div className="top">
                 <div>
                     <p className="city">{data.city}</p>
                     <p className="weather-description">{data.weather[0].description}</p>
+                    <button className="save-city-button" onClick={() => onSaveCity()}>Save City</button>
                 </div>
                 <img src={`icons/${data.weather[0].icon}.png`} alt="weather" className="weather-icon" />
             </div>

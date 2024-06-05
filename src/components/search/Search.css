@@ -1,0 +1,41 @@
+.search-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.search-container label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.react-select__control {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.5em;
+}
+
+.react-select__control--is-focused {
+    border-color: #007bff;
+    box-shadow: 0 0 0 1px #007bff;
+}
+
+.react-select__menu {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.react-select__option--is-focused {
+    background-color: #f0f8ff;
+}
+
+.react-select__option--is-selected {
+    background-color: #007bff;
+    color: white;
+}
