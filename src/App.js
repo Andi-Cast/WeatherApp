@@ -8,6 +8,8 @@ import SavedCities from './components/saved-cities/saved-cities';
 
 function App() {
 
+  const [background, setBackground] = useState(null);
+
   const [savedCities, setSavedCities] = useState(() => {
     const saved = localStorage.getItem("savedCities");
     return saved ? JSON.parse(saved) : null;
@@ -37,6 +39,9 @@ function App() {
 
         setCurrentWeather({city: searchData.label, ...weatherResponse});
         setForecast({city: searchData.label, ...forecastResponse});
+
+        setBackground(`url('/backgrounds/${weatherResponse.weather[0].icon}.jpg')`);
+        
       })
       .catch((err) => console.log(err))
   }
@@ -53,13 +58,15 @@ function App() {
 
 
   return (
-    <div className="container">
-      <div>
-        <Search onSearchChange={handleOnSearchChange}></Search>
-        {currentWeather && <CurrentWeather data={currentWeather} onSaveCity={handleSaveCity}/>}
-        {forecast && <Forecast data={forecast}/>}
+    <div className="background-wrapper" style={{backgroundImage: background}}>
+      <div className="container">
+        <div>
+          <Search onSearchChange={handleOnSearchChange}></Search>
+          {currentWeather && <CurrentWeather data={currentWeather} onSaveCity={handleSaveCity}/>}
+          {forecast && <Forecast data={forecast}/>}
+        </div>
+        {savedCities && <SavedCities cities={savedCities} onCitySelected={handleOnSearchChange} onCityRemove={handleRemoveCity}/>}
       </div>
-      {savedCities && <SavedCities cities={savedCities} onCitySelected={handleOnSearchChange} onCityRemove={handleRemoveCity}/>}
     </div>
   );
 }

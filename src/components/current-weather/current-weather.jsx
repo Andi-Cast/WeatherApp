@@ -35,7 +35,7 @@ const CurrentWeather = ({data, onSaveCity}) => {
 
                     <div className="parameter-row">
                         <span className="parameter-label">Pressure</span>
-                        <span className="parameter-value">{data.main.pressure} PSI</span>
+                        <span className="parameter-value">{(data.main.pressure / 33.8639).toFixed(2)} inHg</span>
                     </div>
                 </div>
             </div>
