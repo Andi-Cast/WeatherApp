@@ -1,6 +1,6 @@
 import './saved-cities.css'
 
-const SavedCities = ({cities, onCitySelected}) => {
+const SavedCities = ({cities, onCitySelected, onCityRemove}) => {
     
     return(
         <div className="saved-cities">
@@ -9,7 +9,7 @@ const SavedCities = ({cities, onCitySelected}) => {
                 {cities.map((city, index) => (
                     <li className="city" key={index} onDoubleClick={() => onCitySelected(city)}>
                         <span>{city.label}</span>
-                        <button> Delete City </button>
+                        <button onClick={() => onCityRemove(city)}> Delete City </button>
                     </li>
                 ))}
             </ul>

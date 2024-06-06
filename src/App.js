@@ -47,6 +47,10 @@ function App() {
     }
   };
 
+  const handleRemoveCity = (city) => {
+    setSavedCities(savedCities.filter(savedCity => savedCity.value !== city.value));
+  }
+
 
   return (
     <div className="container">
@@ -55,7 +59,7 @@ function App() {
         {currentWeather && <CurrentWeather data={currentWeather} onSaveCity={handleSaveCity}/>}
         {forecast && <Forecast data={forecast}/>}
       </div>
-      {savedCities && <SavedCities cities={savedCities} onCitySelected={handleOnSearchChange}/>}
+      {savedCities && <SavedCities cities={savedCities} onCitySelected={handleOnSearchChange} onCityRemove={handleRemoveCity}/>}
     </div>
   );
 }
