@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# **Weather App**
+### This React app utilizes multiple APIs to provide current weather conditions and forecast for selected cities.
+-----
+## **Application Details**
+- For this app, I aimed to create a user-friendly weather application that allows users to search for cities and get real-time weather information. The app provides current weather conditions, a 7-day forecast, and the ability to save favorite cities for quick access.
+- Users can search for cities, view current weather and forecast details, and save or remove cities from their favorites.
+- The background image of the app changes dynamically based on the current weather condition of the selected city, providing a visually engaging experience.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+-----
+## **Technology Used**
+- Visual Studio Code
+- React
+- OpenWeatherMap API fo weather data
+- GeoDB for city search
+-----
+## **Examples Images** 
+- Image 1: Screenshot of app with saved cities when first loading up. 
+  - <img src="https://github.com/Andi-Cast/WorkoutTracker/blob/main/WorkoutAppScreenshot.png" height="auto" width="75%" >
+- Image 2: Example 1.
+    - <img src="https://github.com/Andi-Cast/WorkoutTracker/blob/main/WorkoutAppScreenshot.png" height="auto" width="75%" >
+- Image 3: Example 2.
+    - <img src="https://github.com/Andi-Cast/WorkoutTracker/blob/main/WorkoutAppScreenshot.png" height="auto" width="75%" >
+- Image 4: Example 3.
+    - <img src="https://github.com/Andi-Cast/WorkoutTracker/blob/main/WorkoutAppScreenshot.png" height="auto" width="75%" >
 
-## Available Scripts
+  -----
+## Features
+- Search for cities and view current weather conditons.
+- Get a 7-day weather forecast for the selected city.
+- Save favorite cities for quick access.
+- Remove cities from the saved list.
+- Dynamic background images based on current weather conditions.
+----
+## Future Enhancements
+- Add user authentication to allow personalized saved cities for different users.
+- Improve the user interface and add more weather details.
+- Implement responsive design for better mobile compatibility.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+----
+## Credits
+- Weather data from OpenWeatherMap.
+- City seach by GeoDB Cities.
