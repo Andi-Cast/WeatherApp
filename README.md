@@ -15,13 +15,13 @@
 -----
 ## **Examples Images** 
 - Image 1: Screenshot of app with saved cities when first loading up. 
-  - <img src="https://github.com/Andi-Cast/WorkoutTracker/blob/main/WorkoutAppScreenshot.png" height="auto" width="75%" >
+  - <img src="https://github.com/Andi-Cast/WeatherApp/blob/main/Screenshot-Images/Example0.png" height="auto" width="75%" >
 - Image 2: Example 1.
-    - <img src="https://github.com/Andi-Cast/WorkoutTracker/blob/main/WorkoutAppScreenshot.png" height="auto" width="75%" >
+    - <img src="https://github.com/Andi-Cast/WeatherApp/blob/main/Screenshot-Images/Example1.png" height="auto" width="75%" >
 - Image 3: Example 2.
-    - <img src="https://github.com/Andi-Cast/WorkoutTracker/blob/main/WorkoutAppScreenshot.png" height="auto" width="75%" >
+    - <img src="https://github.com/Andi-Cast/WeatherApp/blob/main/Screenshot-Images/Example2.png" height="auto" width="75%" >
 - Image 4: Example 3.
-    - <img src="https://github.com/Andi-Cast/WorkoutTracker/blob/main/WorkoutAppScreenshot.png" height="auto" width="75%" >
+    - <img src="https://github.com/Andi-Cast/WeatherApp/blob/main/Screenshot-Images/Example3.png" height="auto" width="75%" >
 
   -----
 ## Features
